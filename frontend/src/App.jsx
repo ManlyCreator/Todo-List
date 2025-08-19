@@ -1,6 +1,10 @@
 import { useState } from 'react'
 import './App.css'
 
+/*
+Styling attribution: https://medium.com/@haquedot/building-a-to-do-list-application-with-tailwind-css-and-javascript-5d4ba5dac726 
+*/
+
 function App() {
   return (
     <>
