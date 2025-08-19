@@ -5,6 +5,8 @@ import './App.css'
 Styling attribution: https://medium.com/@haquedot/building-a-to-do-list-application-with-tailwind-css-and-javascript-5d4ba5dac726 
 */
 
+// TODO: Ensure that the .gitignore is working properly
+
 function App() {
   return (
     <>
