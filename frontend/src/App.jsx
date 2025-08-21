@@ -35,7 +35,18 @@ function App() {
         </div>
 
         <ul className="p-4">
-          {tasks.map(task => <li>{task.text}</li>)}
+          {tasks.map(task => (
+            <li className="flex gap-2" key={task.id}>
+              <input 
+              type="checkbox" 
+              value={task.completed} 
+              onChange={() => setTasks(tasks.map(t => (
+                t.id === task.id ? {...t, completed: !task.completed}: t
+              )))}
+              />
+              <span className={task.completed ? "line-through" : ""}>{task.text}</span>
+            </li>
+        ))}
         </ul>
 
         <div className="flex justify-center">

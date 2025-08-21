@@ -7,7 +7,7 @@ function Modal({ addCallback, closeCallback }) {
     const addTask = (e) => {
         e.preventDefault();
         if (task)
-            addCallback({text: task, completed: false});
+            addCallback({id: Date.now(), text: task, completed: false});
     }
 
     return (
